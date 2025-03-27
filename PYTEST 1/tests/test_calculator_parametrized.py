@@ -47,6 +47,7 @@ def test_add_wrong():
         (5, 1, NameError, "Cannot take log with base 1!"),
     ],
 )
+
 def test_log(a, b, expected_exception, expected_message):
     with pytest.raises(expected_exception) as exc:
         calculator.log(a, b)
